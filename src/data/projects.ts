@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   tags: string[];
   github?: string;
+  links?: { label: string; url: string }[];
   demo?: string;
   image?: string;
 }
@@ -20,23 +21,9 @@ export const projects: Project[] = [
       "Automated invoice processing system. Upload a PDF — Tesseract OCR extracts text, then Groq (Llama 3.1) parses invoice number, date, total, and vendor. Async processing via RabbitMQ, full-text search with PostgreSQL tsvector.",
     tags: ["Java", "Spring Boot", "React", "RabbitMQ", "Tesseract", "Groq"],
     github: "https://github.com/GhassenD95/document-ai-pipeline-backend",
-  },
-  {
-    id: "fintech",
-    title: "Fintech Fraud Intelligence",
-    period: "2026",
-    status: "COMING_SOON",
-    description:
-      "Real-time transaction fraud detection system using event-driven architecture. Spring Boot + Kafka, rule engine, anomaly scoring, and a dashboard for investigation.",
-    tags: ["Java", "Spring Boot", "Kafka", "Docker"],
-  },
-  {
-    id: "automation",
-    title: "AI Business Workflow Automation",
-    period: "2026",
-    status: "COMING_SOON",
-    description:
-      "LLM-powered email classification and task automation. Reads emails, extracts intent, creates tickets, updates CRM, and sends responses — with human-in-the-loop approval.",
-    tags: ["Java", "Spring Boot", "LangChain4J", "n8n"],
+    links: [
+      { label: "Backend Repository", url: "https://github.com/GhassenD95/document-ai-pipeline-backend" },
+      { label: "Frontend Repository", url: "https://github.com/GhassenD95/document-ai-pipeline-frontend" },
+    ],
   },
 ];

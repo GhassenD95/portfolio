@@ -1,8 +1,12 @@
+import { useTranslation } from '../../i18n/LanguageContext';
+
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-dashed border-outline mt-24 py-6">
       <div className="max-w-container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
-        <span>© 2026 GHASSEN DHAOUI</span>
+        <span>{t.footer.copyright}</span>
         <div className="flex gap-4">
           <a
             href="https://github.com/GhassenD95"
@@ -10,18 +14,18 @@ export function Footer() {
             rel="noopener noreferrer"
             className="hover:text-on-surface transition-none"
           >
-            GITHUB
+            {t.footer.github}
           </a>
           <a
-            href="https://linkedin.com/in/ghassendhaoui"
+            href="https://www.linkedin.com/in/ghassen-dhaoui-83369a318/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-on-surface transition-none"
           >
-            LINKEDIN
+            {t.footer.linkedin}
           </a>
-          <a href="mailto:ghassen.dhaoui@email.com" className="hover:text-on-surface transition-none">
-            EMAIL
+          <a href="mailto:ghassendhaoui.eng@gmail.com" className="hover:text-on-surface transition-none">
+            {t.footer.email}
           </a>
         </div>
       </div>

@@ -6,18 +6,28 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Backend",
-    items: ["Java 21", "Spring Boot 4", "Spring Security", "JPA/Hibernate", "REST APIs", "RabbitMQ", "Kafka"],
+    items: [
+      "Java", "Spring Boot", "RabbitMQ", "PostgreSQL",
+    ],
   },
   {
     title: "AI & Data",
-    items: ["Groq API", "Llama 3.1", "LangChain4J", "Tesseract OCR", "Prompt Engineering", "PostgreSQL", "Full-Text Search"],
+    items: [
+      "Groq API (Llama 3.1)",
+      "Tesseract OCR", "Prompt Engineering",
+    ],
   },
   {
     title: "Frontend",
-    items: ["React 19", "TypeScript", "Tailwind CSS v4", "TanStack Query", "React Router v7", "Vite"],
+    items: [
+      "React", "TypeScript", "Tailwind CSS", "Vite",
+    ],
   },
   {
     title: "DevOps & Tools",
-    items: ["Docker", "Docker Compose", "Nginx", "Git", "GitHub Actions", "Linux"],
+    items: [
+      "Docker", "Nginx",
+      "Git / CI", "Linux",
+    ],
   },
 ];

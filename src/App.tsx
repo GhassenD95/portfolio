@@ -1,35 +1,36 @@
-import { useState } from 'react';
-import { Header } from './components/layout/Header';
+import { LanguageProvider } from './i18n/LanguageContext';
+import { HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
+import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
-import { Hero } from './components/sections/Hero';
-import { Projects } from './components/sections/Projects';
-import { Skills } from './components/sections/Skills';
-import { Contact } from './components/sections/Contact';
+import Identity from './pages/Identity';
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectDetail from './pages/ProjectDetail';
+import SkillsPage from './pages/SkillsPage';
+import ContactPage from './pages/ContactPage';
+import NotFound from './pages/NotFound';
 
-function App() {
-  const [activeSection, setActiveSection] = useState('hero');
-
-  const handleNavClick = (section: string) => {
-    setActiveSection(section);
-    const el = document.getElementById(section);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+export default function App() {
   return (
-    <>
-      <Header activeSection={activeSection} onNavClick={handleNavClick} />
-      <Layout>
-        <Hero />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-      </Layout>
-    </>
+    <HelmetProvider>
+      <LanguageProvider>
+        <BrowserRouter>
+          <Header />
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Navigate to="/identity" replace />} />
+              <Route path="/identity" element={<Identity />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/projects/:id" element={<ProjectDetail />} />
+              <Route path="/skills" element={<SkillsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+          </Layout>
+        </BrowserRouter>
+      </LanguageProvider>
+    </HelmetProvider>
   );
 }
-
-export default App;
