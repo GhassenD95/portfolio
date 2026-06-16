@@ -46,11 +46,14 @@ export function Hero() {
       </div>
       <div className="flex flex-col md:flex-row md:items-start md:gap-12">
         <div className="flex-1">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight leading-tight mb-2">
-            Ghassen
-            <br />
-            Dhaoui
-          </h1>
+          <div className="flex items-start gap-4 md:block">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight leading-tight mb-2">
+              Ghassen
+              <br />
+              Dhaoui
+            </h1>
+            <div aria-label="Ghassen Dhaoui" className="md:hidden shrink-0 w-20 h-20 rounded-full border-2 border-outline overflow-hidden bg-surface-container animate-fade-in bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/profile.jpeg)', backgroundPosition: 'center 30%', filter: 'saturate(0.85) contrast(1.05)', animationDelay: '0.3s' }} />
+          </div>
           <div className="text-xl md:text-2xl text-on-surface-variant h-8 mb-6">
             {displayed}
             {!done && <BlinkingCursor />}
@@ -86,7 +89,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 shrink-0">
+        <div className="hidden md:block mt-8 md:mt-0 shrink-0">
           <div aria-label="Ghassen Dhaoui" className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-outline overflow-hidden bg-surface-container animate-fade-in bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/profile.jpeg)', backgroundPosition: 'center 30%', filter: 'saturate(0.85) contrast(1.05)', animationDelay: '0.3s' }} />
         </div>
       </div>
