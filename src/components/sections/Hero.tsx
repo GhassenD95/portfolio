@@ -107,7 +107,7 @@ export function Hero() {
               <StampBadge variant="primary">INTERNSHIP 2024</StampBadge>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="text-xs uppercase tracking-wider text-primary/70">RESEARCH INTERN · TALAN TUNISIE</span>
+              <span className="text-xs uppercase tracking-wider text-primary/70">INTERN · TALAN TUNISIE</span>
               <span className="text-base text-on-surface-variant">{t.about.experience}</span>
             </div>
           </div>

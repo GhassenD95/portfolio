@@ -51,8 +51,8 @@ const translations: Record<Language, Translations> = {
       languages: 'AR (native) · EN (fluent) · FR (fluent) · DE (fluent)',
       focus: 'Backend · AI Integration · Systems',
       status: 'Open to internship opportunities in AI and software engineering',
-      education: 'ESPRI Tunis — Engineering Degree in Computer Science (2024 – 2027)',
-      experience: 'Research Intern · Talan Tunisie (Charguia) — Summer 2024 · 6 weeks. Researched sono-genetics (ultrasound + genetics) and built a prototype with Blender and Spring Boot.',
+      education: 'ESPRIT Tunis — Engineering Degree in Computer Science (2024 – 2027)',
+      experience: 'Intern · Talan Tunisie (Charguia) — Summer 2024 · 6 weeks. Researched sono-genetics (ultrasound + genetics) and built a prototype with Blender and Spring Boot.',
     },
     projects: {
       title: 'PROJECTS',
@@ -125,7 +125,7 @@ const translations: Record<Language, Translations> = {
       languages: 'AR (natif) · EN (courant) · FR (courant) · DE (courant)',
       focus: 'Backend · Intégration IA · Systèmes',
       status: 'Ouvert aux stages en IA et génie logiciel',
-      education: 'ESPRI Tunis — Diplôme d\'Ingénieur en Informatique (2024 – 2027)',
+      education: 'ESPRIT Tunis — Diplôme d\'Ingénieur en Informatique (2024 – 2027)',
       experience: 'Stagiaire · Talan Tunisie (Charguia) — Été 2024 · 6 semaines. Recherche sur la sono-génétique (ultrasons + génétique) et prototypage avec Blender et Spring Boot.',
     },
     projects: {
@@ -199,7 +199,7 @@ const translations: Record<Language, Translations> = {
       languages: 'AR (Muttersprache) · EN (fließend) · FR (fließend) · DE (fließend)',
       focus: 'Backend · KI-Integration · Systeme',
       status: 'Offen für Praktika in den Bereichen KI und Softwareentwicklung',
-      education: 'ESPRI Tunis — Ingenieurstudium Informatik (2024 – 2027)',
+      education: 'ESPRIT Tunis — Ingenieurstudium Informatik (2024 – 2027)',
       experience: 'Praktikant · Talan Tunisie (Charguia) — Sommer 2024 · 6 Wochen. Forschung zu Sono-Genetik (Ultraschall + Genetik) und Prototypentwicklung mit Blender und Spring Boot.',
     },
     projects: {

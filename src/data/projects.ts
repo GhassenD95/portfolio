@@ -18,7 +18,7 @@ export const projects: Project[] = [
     period: "2026",
     status: "COMPLETED",
     description:
-      "Automated invoice processing system. Upload a PDF — Tesseract OCR extracts text, then Groq (Llama 3.1) parses invoice number, date, total, and vendor. Async processing via RabbitMQ, full-text search with PostgreSQL tsvector.",
+      "Automated invoice processing system. Upload a PDF — Tesseract OCR extracts text, then Groq (Llama 3.1) parses invoice number, date, total, and vendor. Async processing via RabbitMQ, full-text search with PostgreSQL tsvector. Deployed on Render free tier (backend sleeps on idle — ~1min cold start) with frontend on Cloudflare Workers.",
     tags: ["Java", "Spring Boot", "React", "RabbitMQ", "Tesseract", "Groq"],
     github: "https://github.com/GhassenD95/document-ai-pipeline-backend",
     demo: "https://document-ai-pipeline-frontend.ghassendhaoui-eng.workers.dev",
