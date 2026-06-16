@@ -47,7 +47,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </Link>
             {project.demo && (
               <span className="shrink-0 flex items-center gap-1 text-[10px] uppercase text-green-700 font-bold tracking-wider">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-green-600" />
                 LIVE
               </span>
             )}
