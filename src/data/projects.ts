@@ -23,7 +23,6 @@ export const projects: Project[] = [
     github: "https://github.com/GhassenD95/document-ai-pipeline-backend",
     demo: "https://document-ai-pipeline-frontend.ghassendhaoui-eng.workers.dev",
     links: [
-      { label: "Live Demo", url: "https://document-ai-pipeline-frontend.ghassendhaoui-eng.workers.dev" },
       { label: "Backend Repository", url: "https://github.com/GhassenD95/document-ai-pipeline-backend" },
       { label: "Frontend Repository", url: "https://github.com/GhassenD95/document-ai-pipeline-frontend" },
     ],
