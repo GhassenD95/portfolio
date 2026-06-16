@@ -38,13 +38,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </span>
         </div>
         <div className="flex-1 pl-5 pb-6 border-b border-dashed border-outline/50 group-hover:border-primary/30 transition-colors duration-200">
-          <div className="flex justify-between items-baseline mb-2">
+          <div className="flex justify-between items-baseline mb-2 gap-3">
             <Link
               to={`/projects/${project.id}`}
               className="text-xl md:text-2xl font-bold uppercase group-hover:text-primary transition-colors duration-200"
             >
               {project.title}
             </Link>
+            {project.demo && (
+              <span className="shrink-0 flex items-center gap-1 text-[10px] uppercase text-green-700 font-bold tracking-wider">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse" />
+                LIVE
+              </span>
+            )}
           </div>
           <p className="text-sm text-on-surface-variant leading-relaxed group-hover:text-on-surface transition-colors duration-200">
             {description}

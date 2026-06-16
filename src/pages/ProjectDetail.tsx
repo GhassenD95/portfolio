@@ -120,6 +120,17 @@ export default function ProjectDetail() {
 
       {links.length > 0 && (
         <div className="flex flex-wrap gap-6 mb-6">
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-primary text-primary px-4 py-2 text-sm font-bold uppercase tracking-wider hover:bg-primary hover:text-white transition-colors duration-200"
+            >
+              <span className="w-2 h-2 rounded-full bg-green-600 animate-pulse" />
+              Launch Live Demo ↗
+            </a>
+          )}
           {links.map((link) => (
             <a
               key={link.url}
