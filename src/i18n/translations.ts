@@ -63,7 +63,7 @@ const translations: Record<Language, Translations> = {
       case_label: 'CASE-FILE',
       items: {
         'doc-ai':
-          'An end-to-end OCR and AI-powered document processing pipeline with automatic classification, extraction, and validation.',
+          'An end-to-end OCR and AI-powered document processing pipeline with automatic classification, extraction, and validation. Deployed on Render free tier (backend sleeps on idle — ~1min cold start) with frontend on Cloudflare Workers.',
       },
     },
     skills: {
@@ -137,7 +137,7 @@ const translations: Record<Language, Translations> = {
       case_label: 'DOSSIER',
       items: {
         'doc-ai':
-          'Une pipeline de traitement documentaire complète, propulsée par OCR et IA, avec classification automatique, extraction et validation.',
+          'Une pipeline de traitement documentaire complète, propulsée par OCR et IA, avec classification automatique, extraction et validation. Déployé sur Render (gratuit — le backend s\'endort au repos, ~1min de démarrage) avec le frontend sur Cloudflare Workers.',
       },
     },
     skills: {
@@ -211,7 +211,7 @@ const translations: Record<Language, Translations> = {
       case_label: 'FALL-AKTE',
       items: {
         'doc-ai':
-          'Eine End-to-End-Dokumentenverarbeitungspipeline mit OCR und KI, inklusive automatischer Klassifizierung, Extraktion und Validierung.',
+          'Eine End-to-End-Dokumentenverarbeitungspipeline mit OCR und KI, inklusive automatischer Klassifizierung, Extraktion und Validierung. Bereitgestellt auf Render Free Tier (Backend schläft bei Inaktivität — ~1min Kaltstart) mit Frontend auf Cloudflare Workers.',
       },
     },
     skills: {
